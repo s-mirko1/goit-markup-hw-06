@@ -419,27 +419,42 @@
         </button>
         <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
         <form class="modal-form">
-            <input
-                type="text"
-                class="form-input" 
-                name="user-name"
-            >
-            <input
-                type="tel" 
-                class="form-input" 
-                name="user-tel"
-            >
-            <input 
-                type="email" 
-                class="form-input" 
-                name="user-email"
-            >
-            <input
-                type="text" 
-                class="form-input" 
-                name="user-comment"
-                placeholder="Введіть текст"
-            >
+            <div class="input-field">
+                <label for="user-name" class="input-title">Ім'я</label>
+                <input 
+                    type="text" 
+                    class="form-input" 
+                    name="user-name" 
+                    id="user-name"
+                >
+            </div>
+            <div class="input-field">
+                <label for="user-tel" class="input-title">Телефон</label>
+                <input 
+                    type="tel" 
+                    class="form-input" 
+                    name="user-tel" 
+                    id="user-tel"
+                >
+            </div>
+            <div class="input-field">
+                <label for="user-email" class="input-title">Пошта</label>
+                <input 
+                    type="email" 
+                    class="form-input" 
+                    name="user-email" 
+                    id="user-email"
+                >
+            </div>
+            <div class="input-field">
+                <label for="user-comment" class="input-title">Коментар</label>
+                <textarea 
+                    name="user-comment" 
+                    id="user-comment"
+                    class="modal-text"
+                    placeholder="Введіть текст"
+                ></textarea>
+            </div>
         </form>
         <button class="modal-button" type="submit">Відправити</button>
     </div>
