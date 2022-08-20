@@ -628,6 +628,8 @@ header .container {
     display: flex;
     gap: 70px;
     align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
     
 }
 
@@ -679,7 +681,73 @@ header .container {
     outline: 0;
 }
 
+/* Online */
 
+.online-box {
+
+}
+
+.online-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.online-form {
+
+}
+
+.online-input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: transparent;
+    width: 358px;
+    height: 50px;
+    margin-right: 12px;
+    padding-left: 16px;
+}
+
+.online-input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.online-button {
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    border: none;
+    padding: 10px 52px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    
+    
+}
+
+.online-icon {
+    fill: var(--white-bgc);
+    position: absolute;
+    text-align: center;
+    margin-left: 10px;
+}
 
 /* Portfolio */
 
@@ -903,6 +971,14 @@ margin-bottom: 12px;
     margin-bottom: 4px;
 }
 
+.modal-text::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+}
+
 .modal-text {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -923,6 +999,15 @@ margin-bottom: 12px;
     line-height: 1.16;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+}
+
+.policy-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    padding-left: 4px;
 }
 
 .input-field {

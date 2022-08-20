@@ -405,10 +405,25 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="online-box"> 
+                <form class="online-form">
+                    <p class="online-text">Підпишіться на розсилку</p>
+                    <input type="text"
+                    name="online-name"
+                    class="online-input"
+                    placeholder="E-mail"
+                    >
+                    <button class="online-button" type="submit">Підписатися
+                        <svg class="online-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
             </div>   
         </div>
     </footer>
-<div class="backdrop" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal">
         <button type="button" class="modal-close" data-modal-close>
             <a href="">
@@ -469,7 +484,7 @@
                             <use href="./images/icons.svg#icon-check"></use>
                         </svg>
                     </span>
-                    Погоджуюся з розсилкою та приймаю Умови договору</label>
+                    Погоджуюся з розсилкою та приймаю <a class="policy-link" href="">Умови договору</a></label>
             </div>
             <button class="modal-button" type="submit">Відправити</button>
         </form>
