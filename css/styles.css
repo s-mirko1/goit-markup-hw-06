@@ -712,6 +712,7 @@ header .container {
     height: 50px;
     margin-right: 12px;
     padding-left: 16px;
+    color: var(--white-color);
 }
 
 .online-input::placeholder {
@@ -967,8 +968,22 @@ margin-bottom: 12px;
     cursor: pointer;
     display: flex;
     text-align: center;
+    transition: transform 250ms linear;
 }
 
+.modal-close {
+    transition: transform 250ms linear;
+}
+
+.modal-close:hover .modal-icon {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
+
+.modal-close:hover {
+    fill: var(--accent-color);
+    cursor: pointer;
+}
 
 .input-title {
     font-weight: 400;
